@@ -1,24 +1,25 @@
 # pyfileutil
-A Python file utility for the creation, copying, deletion, moving, and opening of a single file, and aid in the creation of IOTextWrapper objects.
+A Python file utility for the creation, copying, deletion, moving, and opening of 
+a single file, and aid in the creation of IOTextWrapper objects.
 
 ## Inspired by the .NET Framework
 
-Inspired by the .NET Framework's System.IO.File static class, this Python module 
+Inspired by the .NET Framework's System.IO.File static class, this Python module
 provides a class with static methods for the creation, copying, deletion, moving,
 and opening of a single file, and aids in the creation of IOTextWrapper objects.
 
-Furthermore, it provides more utility methods for enumerating files in directories,
+Furthermore, it provides more utility methods for enumerating files in directories
 and transforming the contents of files to Python dictionaries.
 
-## An object-oriented approach for file management
+## An object-oriented approach to file management
 
-The aim of the `fileutil` module was to adopt an object-oriented approach to file
-management within Python and further leverage the `open` function by eliminating
-the use of literal open modes.
+The `fileutil` module aims to adopt an object-oriented approach to file management
+within Python and further leverage the open function by eliminating the use of 
+literal open modes.
 
 ## The File class
 
-It contains 19 public static methods, and one "private" static helper method to 
+It contains 19 public static methods and one "private" static helper method to 
 ensure internal constraints' enforcement.
 
 ### Static Methods
