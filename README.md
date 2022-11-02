@@ -14,8 +14,8 @@ and transforming the contents of files to Python dictionaries.
 ## An object-oriented approach to file management
 
 The `fileutil` module aims to adopt an object-oriented approach to file management
-within Python and further leverage the open function by eliminating the use of 
-literal open modes.
+in Python and further leverage the `open()` function by eliminating the use of 
+literal file operation modes.
 
 ## The File class
 
@@ -63,5 +63,4 @@ The class's interface exposes the following static methods:
         occurrence of each word it contains, and return a dictionary.
 - `words`: Open the specified file in read mode, add each word it
         contains to a dictionary, and return it.
-
 
