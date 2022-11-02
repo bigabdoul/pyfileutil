@@ -64,7 +64,7 @@ class File:
         return open(path, 'r', encoding=encoding)
 
     @staticmethod
-    def open_read_binary(path: str):
+    def openread_binary(path: str):
         """Open a TextIOWrapper on the specified path in binary read mode.
         
         :param path str: The file to open.
@@ -97,7 +97,7 @@ class File:
 
         :param path str: The file to open for reading.
         """
-        with File.open_read_binary(path) as f:
+        with File.openread_binary(path) as f:
             return f.read()
 
     @staticmethod
@@ -180,7 +180,7 @@ class File:
     
     @staticmethod
     def copy(srcpath: str, destpath: str, overwrite = False):
-        """Copie an existing file to a new file. Overwriting a file
+        """Copy an existing file to a new file. Overwriting a file
         of the same name is allowed.
         
         :param srcpath str: The file to copy.
@@ -189,7 +189,7 @@ class File:
         """
         File._enforce_constraints_(srcpath, destpath, overwrite)
 
-        with File.open_read_binary(srcpath) as fsrc:
+        with File.openread_binary(srcpath) as fsrc:
             with File.openwrite_binary(destpath) as fdest:
                 chunk_size = 512
                 chunks_read = fsrc.read(chunk_size)
